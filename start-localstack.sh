@@ -1,0 +1,1 @@
+AWS_DEFAULT_REGION=us-east-1 AWS_PROFILE='localstack' AWS_ACCESS_KEY_ID='foobar' AWS_SECRET_ACCESS_KEY='foobar' TMPDIR=/private$TMPDIR DEBUG=1 SERVICES=serverless,cloudformation,sqs,events PORT_WEB_UI=8082 LAMBDA_REMOTE_DOCKER=false  docker-compose up
