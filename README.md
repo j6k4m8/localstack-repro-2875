@@ -4,6 +4,14 @@ This repo reproduces issue [#2875](https://github.com/localstack/localstack/issu
 
 ## Usage
 
+Start localstack in a docker-compose (all default config values).
+
+```shell
+docker-compose up
+```
+
+Then provision resources (queue and lambda)
+
 ```
 python3 ./resources.py provision
 ```
