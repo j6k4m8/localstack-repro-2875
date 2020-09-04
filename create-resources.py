@@ -40,7 +40,8 @@ def handler(event, lambda_context):
 
     sqs_client = boto3.client(
         "sqs",
-        endpoint_url="http://" + os.getenv("LOCALSTACK_HOSTNAME") + ":4566",
+        endpoint_url="http://172.17.0.1:4566",
+        # endpoint_url="http://" + os.getenv("LOCALSTACK_HOSTNAME") + ":4566",
         aws_access_key_id="foo",
         aws_secret_access_key="foo",
         region_name='us-east-1'
